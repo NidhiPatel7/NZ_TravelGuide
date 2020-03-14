@@ -1,0 +1,131 @@
+.index 
+{
+    .section5 
+    {
+        background-color: #0D2784;
+        width: 100vw;
+        padding: 3em 2.5em;
+        .section5_main
+        {
+            display: none;
+        }
+        .section5_mobile
+        {
+            
+            .destinations-booking-mobile
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .destination-booking-mobile
+                    {
+                        margin: 0;
+                        box-sizing:border-box;
+                        box-sizing:border-box;
+                        display: flex;
+                        align-items:center;
+                        flex-direction: column;
+                        padding: 2em;
+                        color: white;
+                        margin-bottom: 1em;
+                        .btn 
+                        {
+                            margin-top: 1em;
+                        }
+                    }
+                    .destination-booking-mobile:nth-child(even)
+                    {
+                        background-color:rgba(10, 26, 83,0.7);
+                    }
+                    .destination-booking-mobile:nth-child(odd)
+                    {
+                        background-color:#0A1A53;
+                    }
+                }
+        }
+    }
+}
+
+@media only screen and (min-width : 40em) 
+{
+
+}
+
+@media only screen and (min-width : 60em) 
+{ 
+
+}
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) 
+{
+    .index 
+    {
+        .section5
+        {
+            height: 150vh;
+            padding: 7em 15em;
+            overflow: hidden;
+            .section5_mobile
+            {
+                display: none;
+            }
+            .section5_main
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                .viewport
+                {
+                    height: 100vh;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+                .destinations-booking
+                {
+                    margin: 0;
+                    flex-direction: row;
+                    display: flex;
+                    justify-content: flex-start;
+                    .destination-booking
+                    {
+                        margin: 0;
+                        box-sizing:border-box;
+                        flex: 1 0 50%;
+                        height: 50vh;
+                        box-sizing:border-box;
+                        display: flex;
+                        // justify-content:center;
+                        align-items:center;
+                        flex-direction: column;
+                        padding: 2em;
+                        color: white;
+                        h1 
+                        {
+                            margin-bottom: 3em;
+                        }
+                        .btn
+                        {
+                            margin-top: 3em;
+                        }
+                    }
+                    .destination-booking:nth-child(even)
+                    {
+                        // background-color: #000000;
+                        background-color:rgba(10, 26, 83,0.7);
+                    }
+                    .destination-booking:nth-child(odd)
+                    {
+                        background-color:#0A1A53;
+                    }
+                }
+           
+            }
+           
+        }
+    }
+}

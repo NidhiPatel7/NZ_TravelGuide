@@ -1,0 +1,128 @@
+
+.section2
+    {
+       
+        background-color: #091D64;
+        position: relative;
+        padding: 2em 2.5em 3em 2.5em;
+    
+        img 
+        {
+            width: 100%;
+            height: auto;
+        }
+        .tabs 
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .tab 
+        {
+            
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            background-color: #0A1E5D;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24), -5px -5px 4px rgba(0, 0, 0, 0.24);
+            margin: 1em 0;
+            padding: 0.5em 1em;
+            text-align: center;
+            color: white;
+
+            &:hover
+            {
+                background-color: #0A1E5D;
+            }
+        }
+        .active-tab 
+        {
+           
+            width: 100%;
+            background: #061649;
+            border: 0.2px solid #034FF2;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 4px rgba(255, 255, 255, 0.21), -5px -5px 4px rgba(255, 255, 255, 0.21);
+            transform: skew(0, 0);
+        }
+        .tab-outputs 
+        {
+            background: rgba(8, 24, 80, 0.52);
+            box-sizing: border-box;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), -5px -5px 4px rgba(0, 0, 0, 0.25);
+            padding: 2em;
+            color: white;
+
+            p 
+            {
+                margin-bottom: 1em;
+            }
+        }
+        .hide 
+        {
+            display: none; 
+        }
+    }
+
+/*======for small tablet - inclusive=====*/
+@media only screen and (min-width : 40em) 
+{
+    .index 
+    {
+    }
+
+}
+
+/*======for tablet - inclusive=====*/
+
+@media only screen and (min-width : 60em) 
+{
+    .index 
+    {
+    }
+}
+
+/*====for destop - inclusive===*/
+@media only screen and (min-width : 80em) 
+{
+    .index
+    {
+        .section2 
+        {
+            height: 100vh;
+            width: 100vw;
+            main 
+            {
+                margin: 5em 13em;
+            }
+            img 
+            {
+                width: 100%;
+            }
+            .tabs 
+            {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .tab 
+            {
+                flex: 0 0 23%
+            }
+            .city-description 
+            {
+                text-align: center;
+                flex: 1 0 45%;
+                margin-right: 1em;
+            }
+            .city-photos
+            {
+                flex: 1 0 30%;
+            }
+            .top-exp-flex 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

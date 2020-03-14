@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- for diffrent devices mobile viewetc -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- use for output for all browser -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <!-- for responsive (diffrent device) -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <!-- for font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+     <!-- our css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    
+    <title>Transport</title>
+</head>
+<body class="index">
+    <div class="wrap">
+
+        <!-- starting of section1 for welcome to nz -->
+        <section class="section1">
+             <!-- nav menu div start -->
+            <header id="menu-header" class="menu-header">
+                <div class="logo"><img src="assets/images/logo.png" alt="nz"></div>
+                <div class="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="main-nav">
+                    <ul class="nav">
+                        <!-- <div class="wrapper"> -->
+                            <li><a href="#" data-to=".section1" class="active-a">home</a></li>
+                            <li><a href="#" data-to=".section2" class="">experience</a></li>
+                            <li><a href="#" data-to=".section3" class="">contact</a></li>   
+                            <li><a href="#" data-to=".section4" class="">Feedback</a></li> 
+                            <li><a href="#" data-to=".section5" class="">booking</a></li>
+                        <!-- </div> -->
+                    </ul>
+                    <div class="select-container">
+                        <select class="language-select" name="language">
+                                <option value="Language" selected>Select Language &nbsp &nbsp</option>
+                                <option value="English">English</option>
+                                <option value="Maori">Maori</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Japanese">Japanese</option>
+                            </select> 
+                        </div>
+                    
+                </div>
+            </header>
+            <!-- <div class="viewport"> -->
+                
+                    <main class="">
+                        <h1 class="title title-border">welcome to New Zealand<div class="hr">
+                            </div></h1>
+                        
+                        
+                        <div class="background-wrap" data-vide-bg="assets/images/nz.mp4">
+                            <!-- <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                                <source src="" type="video/mp4"> 
+                            </video> -->
+                        </div>
+                        <div class="mobile_img">
+
+                        </div>
+                        <div class="bg-blue"></div>
+                    </main>
+                    <div class="search-form search-form-mobile">
+                        <div class="flex-div-form1">
+                                <div class="contain-form">
+                                    <div class="title  el">
+                                        <p>Quick search</p>
+                                    </div>
+                                    <div class="contain">
+                                        <p>Enter your itinerary here to find your vehicle.</p>
+                                    </div>
+                                </div>
+                                <form action="" class="form1 el" id="form1">
+                                    <div class="form1-flex">
+                                        <div class="form-group flex-width">
+                                            <input class="" type="text" name="people" id="people" placeholder="Enter Number Of People">
+                                        </div>
+                                        <div class="form-group flex-width">
+                                            <input class="" type="text" name="days" id="days" placeholder="Enter Number Of Days">
+                                        </div>
+                                        
+
+                                        <div class="form-group flex-width">
+
+                                    
+                                            <select class="wide" id="from" required>
+                                                <option value="pickup-location" selected>Select Pickup Location</option>
+                                                <option value="Auckland">Auckland</option>
+                                                <option value="Christchurch">Christchurch</option>
+                                                <option value="Queenstown">Queenstown</option>
+                                                <option value="Wellington">Wellington</option>
+                                            </select>   
+                                        </div>
+                                        <!-- <input class="pickup-date" type="date" name="date" placeholder=""> -->
+                                        <div class="form-group flex-width destination" >
+
+                                            <select class="wide" id="to" required>
+                                                <option value="destination-location" selected>Select Destination</option>
+                                                <option value="Auckland">Auckland</option>
+                                                <option value="Christchurch">Christchurch</option>
+                                                <option value="Queenstown">Queenstown</option>
+                                                <option value="Wellington">Wellington</option>
+                                            </select>
+                                        </div>
+                                       
+                                    </div>
+                                    <button type="submit" class="btn search-btn"><span>Submit</span></button>
+                                   
+                                </form>
+                        </div>
+                        <div class="vehicals el">
+                                <p class="title distance">The distance is: <span>0</span>km</p>
+                                <p class="title">Select The vehical and Find transport cost</p>
+                                <div class="flex-vehical">
+                                    <div class="vehical moterbike" data-fuel="3.7">
+                                        
+                                            <img src="assets/images/motor-sports.png" alt="bike">
+                                            
+                                            <p>Moter bike is best option for you.</p>
+                                        
+                                    
+                                    </div>
+                                    <div class="vehical smallCar" data-fuel="8.5">
+                                      
+                                            <img src="assets/images/big_car.png" alt="car">
+                                       
+                                            <p>Small car is best option for you.</p>
+                                    
+                                    </div>
+                                    <div class="vehical peopleMover" data-fuel="9.7">
+                                      
+                                            
+                                            <img src="assets/images/small_car.png" alt="car">
+                                            <p>people Mover car is best option for you.</p>
+                                      
+                                       
+                                    </div>
+                                    <div class="vehical moterhome" data-fuel="17">
+                                    
+                                            <img src="assets/images/motorhome.png" alt="moterhome">
+                                        
+                                            <p>Moterhome is best option for you.</p>
+                                        
+                                    </div>
+                                </div>
+                                <p class="travel-cost title">transport Cost is:<span>$0</span></p>
+	                            
+                        </div>
+                    </div>
+                    
+            <!-- </div> -->
+
+        </section> <!--end of seection for welcome to nz -->
+      
+        <!-- starting of section2 for welcome to nz -->
+        <section class="section2 section--services">
+            <div class="nz_map">
+            </div>
+                    <main>
+                        <h1 class="title title-border">TOP EXPERIENCE IN NEW ZEALAND<div class="hr">
+                            </div></h1>
+                        <div class="tabs">
+                            <div class="tab  " data-tab="1">Queenstown</div>
+                            <div class="tab" data-tab="2">Rotorua</div>
+                            <div class="tab" data-tab="3">Milford Sound</div>
+                            <div class="tab" data-tab="4">National Park</div>
+                        </div>
+                        <div class="tab-outputs">
+                            <div class="tab-output" data-tab="1">
+                                <p class="title-blue">Queenstown</p>
+                                <div class="top-exp-flex">
+                                    <div class="city-description">
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    </div>
+                                    <div class="city-photos">
+                                        <img src="assets/images/city1.png" alt="Queenstown">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-output" data-tab="2">
+                                <p class="title-blue">Rotorua</p>
+                                <div class="top-exp-flex">
+                                    <div class="city-description">
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    </div>
+                                    <div class="city-photos">
+                                        <img src="assets/images/rotorua.png" alt="Rotorua">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-output" data-tab="3">
+                                <p class="title-blue">Milford Sound</p>
+                                <div class="top-exp-flex">
+                                    <div class="city-description">
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    </div>
+                                    <div class="city-photos">
+                                        <img src="assets/images/ms.png" alt="Milford Sound">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-output" data-tab="4">
+                                <p class="title-blue">National Park</p>
+                                <div class="top-exp-flex">
+                                    <div class="city-description">
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum tempore, nihil eaque nobis possimus?</p>
+                                    </div>
+                                    <div class="city-photos">
+                                        <img src="assets/images/ns.png" alt="National Park">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+        </section>
+
+        <!-- section3 for contact form -->
+        <section class="section3">
+            <h1 class="title title-border">CONTACT Us<div class="hr">
+                </div></h1>
+            <p class="title-blue">Any query? Feel free to contact us.</p>
+            <form action="" class="animated-form" id="contact-form">
+                <div class="animated-form-flex">
+                    <div class="form-group">
+                       
+                        <label for="placeholder-contact" class="placeholder-contact">Enter Your Name</label>
+                        <input type="text" name="name"  class="name" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="placeholder-contact" class="placeholder-contact">Enter Your Email</label>
+                        <input type="text" name="Email"  class="Email" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="placeholder-contact  " class="placeholder-contact placeholder-last">Message / Query</label>
+                        <input type="text" name="Message" class="Message" placeholder="">
+                    </div>
+                    
+                </div>
+                
+                <button type="submit" class="btn"><span>Submit</span></button>
+            </form>
+            
+        </section>
+
+        <!-- section4 for feedback form -->
+        <section class="section4">
+            <h1 class="title title-border">Feedback<div class="hr">
+                </div></h1>
+            <p class="title-blue">Lorem, ipsum dolor sit amet consectetur adipisicing. </p>
+            <form action="" class="animated-form" id="Feedback-form">
+                <div class="animated-form-flex">
+                    <div class="form-group">
+                       
+                        <label for="placeholder-contact" class="placeholder-contact">Enter Your Name</label>
+                        <input type="text" name="name"  class="name" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="placeholder-contact" class="placeholder-contact">Enter Your Email</label>
+                        <input type="text" name="Email"  class="Email" placeholder="">
+                    </div>
+                    <div class="form-group">
+                       
+                        <label for="placeholder-contact" class="placeholder-contact placeholder-last">Message / Feedback</label>
+                        <input type="text" name="Message" class="Message" placeholder="">
+                    </div>
+                    
+                </div>
+               
+                <button type="submit" class="btn"><span>Submit</span></button>
+            </form>
+            
+        </section>
+         <!-- section5 for booking -->
+        <section class="section5">
+                <h1 class="title">To help you book</h1>
+            <div class="section5_main">
+                    
+                    <div class="viewport">
+                       
+                        <div class="destinations-booking">
+                            <div class="destination-booking">
+        
+                                <h1 class="title">Bus / Train / Ferry</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                    sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                
+                                <a href="https://at.govt.nz/" class="btn"  target="_blank"><span>Booking</span></a>
+                              
+                            </div>
+                            <div class="destination-booking">
+                               <h1 class="title">Rentals</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                                
+                                <a href="https://www.gorentals.co.nz/" class="btn"  target="_blank"><span>Booking</span></a> 
+                            </div>
+                            <div class="destination-booking">
+                                <h1 class="title">Drive Nz</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                sit amet consectetur adipisicing elit. </p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="https://www.drivenz.co.nz/" class="btn"  target="_blank"><span>Booking</span></a>   
+                            </div>
+                            <div class="destination-booking">
+                                <h1 class="title">autoeurope</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="https://www.autoeurope.co.nz/" class="btn"  target="_blank"><span>Booking</span></a> 
+                            </div>
+                            
+                            
+                        </div>	
+                    </div>
+            </div>
+            <div class="section5_mobile">
+                   
+                       
+                            <div class="destinations-booking-mobile">
+                                <div class="destination-booking-mobile">
+            
+                                    <h1 class="title">Bus / Train / Ferry</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                        sit amet consectetur adipisicing elit. </p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    
+                                    <a href="https://at.govt.nz/" class="btn"  target="_blank"><span>Booking</span></a>
+                                  
+                                </div>
+                                <div class="destination-booking-mobile">
+                                   <h1 class="title">Rentals</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                    sit amet consectetur adipisicing elit. </p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                                    
+                                    <a href="https://www.gorentals.co.nz/" class="btn"  target="_blank"><span>Booking</span></a> 
+                                </div>
+                                <div class="destination-booking-mobile">
+                                    <h1 class="title">Drive Nz</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                    sit amet consectetur adipisicing elit. </p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                                    <a href="https://www.drivenz.co.nz/" class="btn"  target="_blank"><span>Booking</span></a>   
+                                </div>
+                                <div class="destination-booking-mobile">
+                                    <h1 class="title">autoeurope</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                    sit amet consectetur adipisicing elit. Voluptatibus, officiis!</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, officiis!Lorem ipsum dolor, 
+                                    sit amet consectetur adipisicing elit. Voluptatibus, officiis!</p>
+                                    <a href="https://www.autoeurope.co.nz/" class="btn"  target="_blank"><span>Booking</span></a> 
+                                </div>
+                                
+                                
+                            </div>	
+            </div>
+            
+        </section>
+        <footer>
+                All Right Reserved © New Zealand Travel Guide.
+        </footer>
+    </div>
+
+   
+
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- for select tag main js -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- for video in section1 -->
+    <script src="assets/js/jquery.vide.js"></script>
+    <!-- for form validation -->
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <!-- for animation -->
+    <script src="assets/js/anime.min.js"></script>
+   
+    
+    <!-- for select tag style -->
+    <script src="assets/js/selectTag.js"></script>
+    <!-- for map -->
+    
+    <script src="assets/js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknEtmtQzCjjFGOAJiHVFKcBegAsUBUKc&callback=initMap"></script>
+    <!-- for tab -->
+    <script src="assets/js/tab-bar.js"></script>
+    
+</body>
+</html>

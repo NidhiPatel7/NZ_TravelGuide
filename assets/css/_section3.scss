@@ -1,0 +1,126 @@
+.index 
+{
+    .section3
+    {
+        
+        background-color: #0D2784;
+        color: white;
+        padding: 3em 2.5em;
+
+        .title-blue 
+        {
+            margin-top: 2em;
+        }
+
+       
+    }
+}
+.animated-form
+{
+   margin-top: 4em;
+    .btn 
+    {
+        margin-top: 3em;
+    }
+    input 
+    {
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 0.1em solid rgba(255, 255, 255, .2);
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+        transition: 0.5s;
+        margin-top: 1.5em;
+        color: white;
+    }
+    .active 
+    {
+        input 
+        {
+            border-bottom: 0.1em solid rgba(255, 255, 255, 1);
+        }
+        .placeholder-contact 
+        {
+            color: rgba(255, 255, 255, .2);
+            transform: translateY(-2em);
+        }
+    }
+   .placeholder-contact 
+   {
+       position: absolute;
+       top: 40%;
+       left: 10%;
+       color: rgba(255, 255, 255, .5);
+       padding: 0.5em 0;
+       display: inline-block;
+       pointer-events: none;
+       transition: 0.5s;
+   } 
+   .form-group 
+   {
+       position: relative;
+   }
+   .placeholder-last 
+   {
+        left: 10%;
+   }
+}
+/*======for small tablet - inclusive=====*/
+@media only screen and (min-width : 40em) 
+{
+    .index 
+    {
+        
+    }
+
+}
+
+/*======for tablet - inclusive=====*/
+
+@media only screen and (min-width : 60em) 
+{
+    .index 
+    {
+    }
+}
+
+/*====for destop - inclusive===*/
+@media only screen and (min-width : 80em) 
+{
+    .index
+    {
+       .section3 
+       {
+            padding: 10em 2.5em;
+            height: 100vh;
+            width: 100vw;
+            .btn 
+            {
+                margin: 2em 13em;
+            } 
+       }
+
+    }
+    .animated-form
+    {
+        .placeholder-last 
+        {
+            left: 5%;
+        }
+    }
+    .animated-form-flex
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10em;
+        .form-group 
+        {
+            flex: 1 0 40%;
+            margin: 0 3em;
+
+        }
+        
+    }
+}

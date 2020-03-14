@@ -1,0 +1,52 @@
+.index
+{
+    .section4 
+    {
+        background-color: #0A1A53;
+        padding: 3em 2.5em;
+        color: $whiteColor;
+        .title-blue 
+        {
+            margin-top: 2em;
+        }
+    }
+}
+
+/*======for small tablet - inclusive=====*/
+@media only screen and (min-width : 40em) 
+{
+    .index 
+    {
+        
+    }
+
+}
+
+/*======for tablet - inclusive=====*/
+
+@media only screen and (min-width : 60em) 
+{
+    .index 
+    {
+        
+    }
+}
+
+/*====for destop - inclusive===*/
+@media only screen and (min-width : 80em) 
+{
+    .index
+    {
+       .section4
+       {
+            height: 100vh;
+            width: 100vw;
+            padding: 10em 2.5em;
+            .btn 
+            {
+                margin: 2em 13em;
+            } 
+       }
+
+    }
+}

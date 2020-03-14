@@ -1,0 +1,499 @@
+// -------for section1 -------
+
+
+.header-fixed{
+    position: fixed !important;
+    
+    background-color: rgba(25, 34, 66, 0.7);
+   
+}
+.active-a
+{
+    color: $whiteColor !important;
+}
+.index 
+{
+
+    .section1
+    {
+        
+
+        main 
+        {
+            position: relative;
+        }
+        header 
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            padding: 1em 2em ;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+        .logo 
+        {
+            img 
+            {
+                width: 4em;
+                height: auto;
+            }
+        }
+        .bar 
+        {
+            z-index: 3;
+            position: absolute;
+            top: 1em;
+            right: 2em;
+            margin: 1em 0.5em;
+            i 
+            {
+                color: white;
+                font-size: 2em;
+            }
+        }
+        .main-nav
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            // display: none;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // width: 50%;
+            background-color: rgba(6,22,73,0.9);
+            
+            transition: all 2s ease-out;
+            clip-path: circle(9em at 90% -90%);
+            .nice-select 
+            {
+              @extend .select;
+              padding: 0.5em 2em;  
+            }
+            
+        }
+        .nav 
+        {
+            
+            text-decoration: none;
+            text-transform: uppercase;
+
+      
+            li 
+            {
+                padding: 1em 0;
+                opacity: 0;
+                &:nth-child(1)
+                {
+                    transition: all 0.5s ease 0.2s;
+                }
+                &:nth-child(2)
+                {
+                    transition: all 0.5s ease 0.4s;
+                }
+                &:nth-child(3)
+                {
+                    transition: all 0.5s ease 0.6s;
+                }
+                &:nth-child(4)
+                {
+                    transition: all 0.5s ease 0.8s;
+                }
+
+            }
+            
+            .fade-li 
+            {
+                opacity: 1;
+            }
+            a 
+            {
+                color: $violet;
+                display: inline;
+                font-weight: bold;
+               
+            }
+        }
+        .open-nav 
+        {
+            clip-path: circle(90em at 90% -10%);
+                
+        }
+        .search-form 
+        {
+
+            
+            background-color: $blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 3em 2.5em;
+            ::placeholder
+            {
+                color: $violet;
+                font-size: 1em;
+            }
+           
+            .form-group:after{
+                content:'';
+                display: block;
+                clear:both;
+                position: relative;
+
+            }
+            .flex-width 
+            {
+                position: relative;
+                margin-bottom: 1em;
+            }
+            .error 
+            {
+                position: absolute;
+                top:70%;
+                left: 0;
+                color: white;
+                padding: 0.5em;
+                line-height: 1.3em;
+                z-index: 1;
+            }
+            select 
+            {
+                @extend .select;
+                background-color: white;
+                margin: 0;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 1em;
+                border-radius: 0.3em;
+            }
+           .nice-select 
+           {
+               margin: 0.5em 0;
+               border: 0.2em solid #034FF2;
+           }
+            .search-btn 
+            {
+                @extend .btn;
+               
+                margin-top: 1em;
+            }
+            .title 
+            {
+                margin-top: 2em;  
+            }
+            .contain
+            {
+                padding: 2em;
+                text-align: center;
+                color: #8E8E8E;
+            }
+            .contain-form
+            {
+                background-color:$serch_contain_bg;
+                font-weight: bold;
+                padding: 1em 0;
+            }
+            form 
+            {
+                margin-top: 2em;
+                input 
+                {
+                    margin: 0.5em 0;
+                }
+            }
+            .vehicals 
+            {
+                background-color: rgba(8, 24, 80, 0.52);
+                box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), -5px -5px 4px rgba(0, 0, 0, 0.25);
+                padding: 2em;
+                margin-top: 2em;
+                .title
+                {
+                    margin-bottom: 2em;
+                }
+                .active 
+                {
+                    background: #061649;
+                    border: 4px solid #034FF2;
+                    box-sizing: border-box;
+                    box-shadow: 5px 5px 11px rgba(174, 187, 215, 0.29), -5px -5px 4px rgba(174, 187, 215, 0.29);
+                    opacity: 1;
+                    transform: scale(1);
+                    pointer-events:auto !important;
+                }
+                .vehical
+                {
+                    background: #0A1E5D;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -5px -2px 4px rgba(0, 0, 0, 0.25);
+                    // border: 4px solid #034FF2;
+                    display: flex;
+                    align-items: center;
+                    opacity: 0.2;
+                    color: $whiteColor;
+                    margin: 1.5em 0;
+                    pointer-events:none;
+                    position: relative;
+                    a 
+                    {
+                        display: flex;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+               
+                img 
+                {
+                    padding: 1em;
+                    width: 5em;
+                }
+            }
+        }
+        .bg-blue
+        {
+            
+            background: rgba(13, 39, 132, 0.42);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 18em;
+        }
+        main 
+        {
+            .title 
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+       
+    }
+
+    
+
+}
+
+/*======for small tablet - inclusive=====*/
+@media only screen and (min-width : 40em) 
+{
+    .index 
+    {
+        .section1
+        {
+           main 
+           {
+                height: 20em;
+           }
+            .bg-blue
+            {
+                height: 100%;
+            }
+            
+            
+        }
+    }
+}
+
+/*======for tablet - inclusive=====*/
+
+@media only screen and (min-width : 60em) 
+{
+    .index 
+    {
+        .section1 
+        {
+            .search-form
+            {
+               input 
+               {
+                   padding: 0.3em;
+               }
+            }
+        }
+    }
+}
+
+/*====for destop - inclusive===*/
+@media only screen and (min-width : 80em) 
+{
+    .index
+    {
+        .section1
+        {
+            height: 100vh;
+           
+            main 
+           {
+                height: 100vh;
+           }
+            .bg-blue
+            {
+                 height: 100vh;
+            }
+            .bar 
+            {
+                display: none;
+            }
+            .logo 
+            {
+                img 
+                {
+                    width: 6em;
+                    height: auto;
+                }
+            }
+            header 
+            {
+                padding: 0em 15em;
+                justify-content: space-between;
+                align-items: center;
+                .nice-select 
+                {
+                    padding:1 
+                }
+            }
+            .main-nav 
+            {
+                clip-path: none;
+                flex-direction: row;
+                background-color: rgba(0, 0, 0, 0);
+                height: auto;   
+                position: relative;
+                justify-content: flex-end;
+                .nice-select
+                {
+                    margin-left: 3em;
+                    background-color: $blue;
+                }
+            }
+            .nav 
+            {
+                display: flex;
+                li 
+                {
+                    opacity: 1;
+                    padding-left: 3em;
+                }
+            }
+            .search-form 
+            {
+                background-color: rgba(0, 0, 0, 0);
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding-left: 0;
+                padding-right: 0;
+                height: 100vh;
+                justify-content: space-between;
+                padding: 0;
+                input 
+                {
+                    padding: 0.7em 1em;
+                }
+                .error 
+                {
+                    top:100%;
+                }
+                .title
+                {
+                    margin-top: 1em;
+                }
+                .contain 
+                {
+                    padding: 1em;
+                }
+                ::placeholder
+                {
+                    font-size: 0.8em;
+                }
+                .flex-div-form1 
+                {
+                    display: flex;
+                    padding: 0 15em;
+                    margin-top: 6em;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .nice-select 
+                {
+                    padding: 0.25em 1em;
+                }
+                .contain-form
+                {
+                    flex: 0 0 20%;
+                    background-color:rgba(25,34,66,0.7);
+                }
+                .form1-flex
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .search-btn
+                {
+                    margin-top: 0;
+                }
+                form 
+                {
+                    
+                    flex: 1 0 60%;
+                    background-color: $blue;
+                    margin-top: 0;
+                    padding: 1em;
+                    background-color: rgba(6, 22, 73, 0.7);
+                }
+                .flex-width 
+                {
+                    flex: 1 0 43%;
+                    margin-right: 1em;
+                    height: 3em;
+                    position: relative;
+                    margin-bottom: 2em;
+                }
+                .vehicals 
+                {
+                    background-color: rgba(8, 24, 80, 0.7);
+                    margin: 0 15em;
+                    padding: 1em;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    .vehical 
+                    {
+                        flex: 1 0 20%;
+                        height: auto;
+                        padding: 1em;
+                        margin: 0.5em 1em;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .title
+                    {
+                        margin: 0;
+                    }
+                    
+                }
+                .flex-vehical 
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                
+            }
+           
+        }
+    }
+}
